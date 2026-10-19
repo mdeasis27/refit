@@ -1,0 +1,38 @@
+/* Single source of the Refit identity. Documented, with contrast ratios, in DESIGN.md. */
+:root {
+  --paper: #f7f3ea;
+  --chalk: #ffffff;
+  --ink: #1c1b19;
+  --muted: #57534a;
+  --thread: #a6361c;
+  --thread-strong: #7e2814;
+  --seam: #2b5f5a;
+  --error: #a1251b;
+  --focus: #1f4fd1;
+  --line: #7a7568;
+  --wash: #ece5d3;
+
+  --font-display: var(--font-bricolage), "Segoe UI", sans-serif;
+  --font-body: var(--font-atkinson), "Segoe UI", sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+
+  --text-sm: 0.9375rem;
+  --text-md: 1.0625rem;
+  --text-lg: 1.375rem;
+  --text-xl: 2rem;
+  --text-2xl: clamp(2.25rem, 7vw, 3.75rem);
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2.5rem;
+  --space-7: 4rem;
+
+  --radius: 0.5rem;
+  --target: 2.75rem;
+  --focus-width: 3px;
+  --focus-offset: 2px;
+  --measure: 38rem;
+}

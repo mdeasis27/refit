@@ -1,0 +1,116 @@
+{
+  "before": {
+    "violations": 9,
+    "nodes": 15
+  },
+  "after": {
+    "violations": 0,
+    "nodes": 0
+  },
+  "steps": {
+    "before": 5,
+    "after": 3
+  },
+  "measuredAt": "2026-10-17T03:39:04.576Z",
+  "axeVersion": "4.14.0",
+  "tags": [
+    "wcag2a",
+    "wcag2aa",
+    "wcag21a",
+    "wcag21aa",
+    "wcag22aa"
+  ],
+  "routes": {
+    "steps": [
+      "/en/redesign",
+      "/en/redesign?step=plan",
+      "/en/redesign?step=done"
+    ],
+    "measured": [
+      "/en/redesign",
+      "/es/redesign",
+      "/en/redesign?step=plan",
+      "/es/redesign?step=plan",
+      "/en/redesign?step=done",
+      "/es/redesign?step=done"
+    ]
+  },
+  "pages": {
+    "before": [
+      {
+        "url": "/broken/index.html",
+        "rules": [
+          {
+            "id": "button-name",
+            "nodes": 1
+          },
+          {
+            "id": "color-contrast",
+            "nodes": 6
+          },
+          {
+            "id": "document-title",
+            "nodes": 1
+          },
+          {
+            "id": "html-has-lang",
+            "nodes": 1
+          },
+          {
+            "id": "image-alt",
+            "nodes": 1
+          },
+          {
+            "id": "label",
+            "nodes": 2
+          },
+          {
+            "id": "link-name",
+            "nodes": 1
+          },
+          {
+            "id": "meta-viewport",
+            "nodes": 1
+          },
+          {
+            "id": "select-name",
+            "nodes": 1
+          }
+        ],
+        "axeVersion": "4.14.0"
+      }
+    ],
+    "after": [
+      {
+        "url": "/en/redesign",
+        "rules": [],
+        "axeVersion": "4.14.0"
+      },
+      {
+        "url": "/es/redesign",
+        "rules": [],
+        "axeVersion": "4.14.0"
+      },
+      {
+        "url": "/en/redesign?step=plan",
+        "rules": [],
+        "axeVersion": "4.14.0"
+      },
+      {
+        "url": "/es/redesign?step=plan",
+        "rules": [],
+        "axeVersion": "4.14.0"
+      },
+      {
+        "url": "/en/redesign?step=done",
+        "rules": [],
+        "axeVersion": "4.14.0"
+      },
+      {
+        "url": "/es/redesign?step=done",
+        "rules": [],
+        "axeVersion": "4.14.0"
+      }
+    ]
+  }
+}

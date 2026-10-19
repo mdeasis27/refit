@@ -1,0 +1,259 @@
+.flow {
+  background: var(--chalk);
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  padding: var(--space-5) var(--space-4);
+  max-width: 34rem;
+}
+
+.flow-heading {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-4);
+}
+
+.flow-heading:focus {
+  outline: none;
+}
+
+.flow-heading:focus-visible {
+  outline: var(--focus-width) solid var(--focus);
+  outline-offset: var(--focus-offset);
+}
+
+.progress-text {
+  margin: 0 0 var(--space-2);
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.progress-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  list-style: none;
+  margin: 0 0 var(--space-4);
+  padding: 0;
+}
+
+.progress-list li {
+  padding: var(--space-1) var(--space-3);
+  border: 2px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+}
+
+.progress-list li[aria-current="step"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--chalk);
+  font-weight: 700;
+}
+
+.flow-form {
+  display: grid;
+  gap: var(--space-4);
+  justify-items: start;
+}
+
+.flow-form > * {
+  max-width: 100%;
+}
+
+.lead {
+  font-size: var(--text-lg);
+  margin: 0;
+}
+
+.field {
+  display: grid;
+  gap: var(--space-2);
+  justify-items: start;
+  width: 100%;
+}
+
+.field label {
+  font-weight: 700;
+}
+
+.field input {
+  width: 100%;
+  min-height: var(--target);
+  padding: var(--space-2) var(--space-3);
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--chalk);
+  color: var(--ink);
+  font: inherit;
+}
+
+.field input[aria-invalid="true"] {
+  border-color: var(--error);
+}
+
+.hint {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-sm);
+}
+
+.error-text {
+  margin: 0;
+  color: var(--error);
+  font-weight: 700;
+}
+
+.error-summary {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  border: 3px solid var(--error);
+  border-radius: var(--radius);
+  background: var(--chalk);
+}
+
+.error-summary:focus-visible {
+  outline: var(--focus-width) solid var(--focus);
+  outline-offset: var(--focus-offset);
+}
+
+.error-summary-title {
+  margin: 0 0 var(--space-2);
+  color: var(--error);
+  font-weight: 700;
+}
+
+.error-summary ul {
+  margin: 0;
+  padding-left: var(--space-5);
+}
+
+.error-summary a {
+  color: var(--error);
+  display: inline-block;
+  padding: var(--space-1) 0;
+}
+
+.btn.small {
+  font-size: var(--text-sm);
+}
+
+.plans {
+  display: grid;
+  gap: var(--space-3);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.plans legend {
+  padding: 0;
+  margin-bottom: var(--space-2);
+  font-weight: 700;
+}
+
+.plan-option {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: var(--space-1) var(--space-3);
+  min-height: var(--target);
+  padding: var(--space-3) var(--space-4);
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--chalk);
+  cursor: pointer;
+}
+
+.plan-option:has(input:checked) {
+  border-color: var(--ink);
+  background: var(--wash);
+}
+
+.plan-option:has(input:focus-visible) {
+  outline: var(--focus-width) solid var(--focus);
+  outline-offset: var(--focus-offset);
+}
+
+.plan-option input {
+  grid-row: 1 / span 2;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0;
+  accent-color: var(--thread-strong);
+}
+
+.plan-name {
+  font-weight: 700;
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+}
+
+.plan-blurb {
+  grid-column: 2;
+  color: var(--muted);
+}
+
+.plan-price {
+  grid-row: 1 / span 2;
+  grid-column: 3;
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  text-align: right;
+}
+
+.summary {
+  display: grid;
+  gap: var(--space-2);
+  width: 100%;
+  margin: 0;
+}
+
+.summary div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.summary dt {
+  font-weight: 700;
+  min-width: 6rem;
+}
+
+.summary dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.terms summary {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--target);
+  cursor: pointer;
+  color: var(--thread);
+  text-decoration: underline;
+}
+
+.terms p {
+  margin-top: var(--space-2);
+}
+
+.demo-note {
+  margin-top: var(--space-5);
+}
+
+@media (max-width: 30rem) {
+  .plan-option {
+    grid-template-columns: auto 1fr;
+  }
+
+  .plan-price {
+    grid-row: auto;
+    grid-column: 2;
+    text-align: left;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,619 @@
+{
+  "author": "maintainer",
+  "criteria": {
+    "wcag-1.1.1": {
+      "kind": "wcag",
+      "ref": "1.1.1",
+      "name": { "en": "Non-text Content", "es": "Contenido no textual" },
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html"
+    },
+    "wcag-1.3.1": {
+      "kind": "wcag",
+      "ref": "1.3.1",
+      "name": { "en": "Info and Relationships", "es": "Información y relaciones" },
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html"
+    },
+    "wcag-1.3.5": {
+      "kind": "wcag",
+      "ref": "1.3.5",
+      "name": { "en": "Identify Input Purpose", "es": "Identificar el propósito de la entrada" },
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose.html"
+    },
+    "wcag-1.4.1": {
+      "kind": "wcag",
+      "ref": "1.4.1",
+      "name": { "en": "Use of Color", "es": "Uso del color" },
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+    },
+    "wcag-1.4.3": {
+      "kind": "wcag",
+      "ref": "1.4.3",
+      "name": { "en": "Contrast (Minimum)", "es": "Contraste (mínimo)" },
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+    },
+    "wcag-1.4.4": {
+      "kind": "wcag",
+      "ref": "1.4.4",
+      "name": { "en": "Resize Text", "es": "Redimensionar texto" },
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html"
+    },
+    "wcag-1.4.13": {
+      "kind": "wcag",
+      "ref": "1.4.13",
+      "name": {
+        "en": "Content on Hover or Focus",
+        "es": "Contenido al pasar el cursor o al enfocar"
+      },
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus.html"
+    },
+    "wcag-2.1.1": {
+      "kind": "wcag",
+      "ref": "2.1.1",
+      "name": { "en": "Keyboard", "es": "Teclado" },
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html"
+    },
+    "wcag-2.1.2": {
+      "kind": "wcag",
+      "ref": "2.1.2",
+      "name": { "en": "No Keyboard Trap", "es": "Sin trampas de teclado" },
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap.html"
+    },
+    "wcag-2.2.2": {
+      "kind": "wcag",
+      "ref": "2.2.2",
+      "name": { "en": "Pause, Stop, Hide", "es": "Pausar, detener, ocultar" },
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html"
+    },
+    "wcag-2.4.2": {
+      "kind": "wcag",
+      "ref": "2.4.2",
+      "name": { "en": "Page Titled", "es": "Página titulada" },
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/page-titled.html"
+    },
+    "wcag-2.4.3": {
+      "kind": "wcag",
+      "ref": "2.4.3",
+      "name": { "en": "Focus Order", "es": "Orden del foco" },
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html"
+    },
+    "wcag-2.4.4": {
+      "kind": "wcag",
+      "ref": "2.4.4",
+      "name": { "en": "Link Purpose (In Context)", "es": "Propósito del enlace (en contexto)" },
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html"
+    },
+    "wcag-2.4.6": {
+      "kind": "wcag",
+      "ref": "2.4.6",
+      "name": { "en": "Headings and Labels", "es": "Encabezados y etiquetas" },
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels.html"
+    },
+    "wcag-2.4.7": {
+      "kind": "wcag",
+      "ref": "2.4.7",
+      "name": { "en": "Focus Visible", "es": "Foco visible" },
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html"
+    },
+    "wcag-2.5.8": {
+      "kind": "wcag",
+      "ref": "2.5.8",
+      "name": { "en": "Target Size (Minimum)", "es": "Tamaño del objetivo (mínimo)" },
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"
+    },
+    "wcag-3.1.1": {
+      "kind": "wcag",
+      "ref": "3.1.1",
+      "name": { "en": "Language of Page", "es": "Idioma de la página" },
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/language-of-page.html"
+    },
+    "wcag-3.3.1": {
+      "kind": "wcag",
+      "ref": "3.3.1",
+      "name": { "en": "Error Identification", "es": "Identificación de errores" },
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html"
+    },
+    "wcag-3.3.2": {
+      "kind": "wcag",
+      "ref": "3.3.2",
+      "name": { "en": "Labels or Instructions", "es": "Etiquetas o instrucciones" },
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions.html"
+    },
+    "wcag-4.1.2": {
+      "kind": "wcag",
+      "ref": "4.1.2",
+      "name": { "en": "Name, Role, Value", "es": "Nombre, función, valor" },
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html"
+    },
+    "wcag-4.1.3": {
+      "kind": "wcag",
+      "ref": "4.1.3",
+      "name": { "en": "Status Messages", "es": "Mensajes de estado" },
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html"
+    },
+    "ux-status": {
+      "kind": "heuristic",
+      "ref": "H1",
+      "name": { "en": "Visibility of system status", "es": "Visibilidad del estado del sistema" }
+    },
+    "ux-match": {
+      "kind": "heuristic",
+      "ref": "H2",
+      "name": {
+        "en": "Match between system and real world",
+        "es": "Coincidencia entre el sistema y el mundo real"
+      }
+    },
+    "ux-control": {
+      "kind": "heuristic",
+      "ref": "H3",
+      "name": { "en": "User control and freedom", "es": "Control y libertad del usuario" }
+    },
+    "ux-prevention": {
+      "kind": "heuristic",
+      "ref": "H5",
+      "name": { "en": "Error prevention", "es": "Prevención de errores" }
+    },
+    "ux-recognition": {
+      "kind": "heuristic",
+      "ref": "H6",
+      "name": { "en": "Recognition rather than recall", "es": "Reconocimiento antes que recuerdo" }
+    },
+    "ux-minimal": {
+      "kind": "heuristic",
+      "ref": "H8",
+      "name": { "en": "Aesthetic and minimalist design", "es": "Diseño estético y minimalista" }
+    }
+  },
+  "entries": [
+    {
+      "id": "no-labels",
+      "severity": "blocker",
+      "title": {
+        "en": "Fields have a placeholder and no label",
+        "es": "Los campos tienen placeholder y ninguna etiqueta"
+      },
+      "where": {
+        "en": "Every text field and the country select in step 1, and the card fields in step 3.",
+        "es": "Todos los campos de texto y el selector de país del paso 1, y los campos de tarjeta del paso 3."
+      },
+      "breaks": ["wcag-1.3.1", "wcag-3.3.2", "wcag-4.1.2"],
+      "axeRules": ["label", "select-name"],
+      "fix": {
+        "en": "Each field has a visible label that stays on screen while typing and is tied to its input.",
+        "es": "Cada campo tiene una etiqueta visible que no desaparece al escribir y está unida a su input."
+      }
+    },
+    {
+      "id": "div-buttons",
+      "severity": "blocker",
+      "title": {
+        "en": "Buttons are plain blocks that the keyboard cannot reach",
+        "es": "Los botones son bloques simples a los que el teclado no llega"
+      },
+      "where": {
+        "en": "Next, Continue, Proceed, Submit, I agree and the close mark are div and span elements with click handlers.",
+        "es": "Next, Continue, Proceed, Submit, I agree y la marca de cierre son elementos div y span con manejadores de clic."
+      },
+      "breaks": ["wcag-2.1.1", "wcag-4.1.2"],
+      "axeRules": [],
+      "fix": {
+        "en": "Every action is a real button, so it can be focused, announced and pressed with Enter or Space.",
+        "es": "Cada acción es un botón real, así que se puede enfocar, se anuncia y se activa con Enter o Espacio."
+      }
+    },
+    {
+      "id": "plan-cards",
+      "severity": "blocker",
+      "title": {
+        "en": "Plan cards work with a mouse only",
+        "es": "Las tarjetas de plan solo funcionan con ratón"
+      },
+      "where": {
+        "en": "Step 2: the three plans are blocks with a click handler and no role or state.",
+        "es": "Paso 2: los tres planes son bloques con un manejador de clic y sin función ni estado."
+      },
+      "breaks": ["wcag-2.1.1", "wcag-4.1.2"],
+      "axeRules": [],
+      "fix": {
+        "en": "The plans are a radio group in a fieldset. Arrow keys move the choice and the checked plan is announced.",
+        "es": "Los planes son un grupo de opciones en un fieldset. Las flechas mueven la elección y se anuncia el plan marcado."
+      }
+    },
+    {
+      "id": "hover-prices",
+      "severity": "major",
+      "title": {
+        "en": "Prices only appear on hover",
+        "es": "Los precios solo aparecen al pasar el cursor"
+      },
+      "where": {
+        "en": "Step 2: the price of each plan is hidden until the pointer is over the card.",
+        "es": "Paso 2: el precio de cada plan está oculto hasta que el puntero está sobre la tarjeta."
+      },
+      "breaks": ["wcag-1.4.13", "ux-status"],
+      "axeRules": [],
+      "fix": {
+        "en": "Every price is always on screen, formatted from integer cents.",
+        "es": "Cada precio está siempre a la vista, formateado a partir de centavos enteros."
+      }
+    },
+    {
+      "id": "zoom-blocked",
+      "severity": "major",
+      "title": { "en": "Zoom is switched off", "es": "El zoom está desactivado" },
+      "where": {
+        "en": "The viewport meta tag sets maximum-scale=1 and user-scalable=no.",
+        "es": "La etiqueta meta del viewport fija maximum-scale=1 y user-scalable=no."
+      },
+      "breaks": ["wcag-1.4.4"],
+      "axeRules": ["meta-viewport"],
+      "fix": {
+        "en": "The viewport allows zoom and the layout holds at 375 px and at 200 percent text.",
+        "es": "El viewport permite el zoom y el diseño aguanta a 375 px y con el texto al 200 por ciento."
+      }
+    },
+    {
+      "id": "no-lang",
+      "severity": "major",
+      "title": {
+        "en": "The page does not say what language it is in",
+        "es": "La página no indica en qué idioma está"
+      },
+      "where": {
+        "en": "The html element has no lang attribute.",
+        "es": "El elemento html no tiene el atributo lang."
+      },
+      "breaks": ["wcag-3.1.1"],
+      "axeRules": ["html-has-lang"],
+      "fix": {
+        "en": "The document language is set for each locale, so screen readers pick the right voice.",
+        "es": "El idioma del documento se fija en cada versión, así los lectores de pantalla eligen la voz correcta."
+      }
+    },
+    {
+      "id": "no-title",
+      "severity": "major",
+      "title": { "en": "The page has no title", "es": "La página no tiene título" },
+      "where": {
+        "en": "There is no title element, so the tab and the history show a bare address.",
+        "es": "No hay elemento title, así que la pestaña y el historial muestran una dirección desnuda."
+      },
+      "breaks": ["wcag-2.4.2"],
+      "axeRules": ["document-title"],
+      "fix": {
+        "en": "Each step has its own title that names the step.",
+        "es": "Cada paso tiene su propio título que nombra el paso."
+      }
+    },
+    {
+      "id": "low-contrast",
+      "severity": "major",
+      "title": { "en": "Pale text is hard to read", "es": "El texto pálido es difícil de leer" },
+      "where": {
+        "en": "Grey notes, light blue buttons with pale text, the small links and the testimonials sit under 4.5 to 1.",
+        "es": "Las notas grises, los botones azul claro con texto pálido, los enlaces pequeños y los testimonios quedan por debajo de 4.5 a 1."
+      },
+      "breaks": ["wcag-1.4.3"],
+      "axeRules": ["color-contrast"],
+      "fix": {
+        "en": "Every text pair is at least 4.5 to 1 and the ratios are listed in the design notes and checked by a test.",
+        "es": "Cada par de texto llega al menos a 4.5 a 1, y las proporciones están en las notas de diseño y las revisa una prueba."
+      }
+    },
+    {
+      "id": "no-focus-ring",
+      "severity": "blocker",
+      "title": {
+        "en": "You cannot see where the keyboard is",
+        "es": "No se ve dónde está el teclado"
+      },
+      "where": {
+        "en": "The inputs remove the outline and nothing replaces it.",
+        "es": "Los inputs quitan el contorno y nada lo reemplaza."
+      },
+      "breaks": ["wcag-2.4.7"],
+      "axeRules": [],
+      "fix": {
+        "en": "A thick ring appears on every focused control, with enough contrast against the page and the cards.",
+        "es": "Un anillo grueso aparece en cada control enfocado, con contraste suficiente contra la página y las tarjetas."
+      }
+    },
+    {
+      "id": "color-only-errors",
+      "severity": "major",
+      "title": {
+        "en": "Errors are a red border and nothing else",
+        "es": "Los errores son un borde rojo y nada más"
+      },
+      "where": {
+        "en": "A wrong field only turns red. Nothing says what is wrong and nothing is announced.",
+        "es": "Un campo incorrecto solo se pone rojo. Nada dice qué falla y nada se anuncia."
+      },
+      "breaks": ["wcag-1.4.1", "wcag-3.3.1", "wcag-4.1.3"],
+      "axeRules": [],
+      "fix": {
+        "en": "Errors are written next to the field with an icon, listed in a summary that is announced and focused, and each field is marked invalid.",
+        "es": "Los errores se escriben junto al campo con un icono, se listan en un resumen que se anuncia y recibe el foco, y cada campo se marca como inválido."
+      }
+    },
+    {
+      "id": "auto-carousel",
+      "severity": "minor",
+      "title": { "en": "Testimonials rotate by themselves", "es": "Los testimonios rotan solos" },
+      "where": {
+        "en": "A banner swaps its text every 2.5 seconds with no way to pause it.",
+        "es": "Un banner cambia su texto cada 2,5 segundos sin forma de pausarlo."
+      },
+      "breaks": ["wcag-2.2.2"],
+      "axeRules": [],
+      "fix": {
+        "en": "There is nothing that moves on its own.",
+        "es": "No hay nada que se mueva solo."
+      }
+    },
+    {
+      "id": "images-no-alt",
+      "severity": "minor",
+      "title": {
+        "en": "Images have no alternative text",
+        "es": "Las imágenes no tienen texto alternativo"
+      },
+      "where": {
+        "en": "The avatar pictures in the testimonials have no alt attribute.",
+        "es": "Las fotos de perfil de los testimonios no tienen el atributo alt."
+      },
+      "breaks": ["wcag-1.1.1"],
+      "axeRules": ["image-alt"],
+      "fix": {
+        "en": "The redesign has no decorative pictures. Anything that is only decoration is hidden from assistive technology.",
+        "es": "El rediseño no tiene imágenes decorativas. Lo que es solo adorno se oculta a la tecnología de apoyo."
+      }
+    },
+    {
+      "id": "empty-controls",
+      "severity": "major",
+      "title": {
+        "en": "Empty links and buttons in the header",
+        "es": "Enlaces y botones vacíos en la cabecera"
+      },
+      "where": {
+        "en": "A link with no text and a round button with no name sit next to the logo.",
+        "es": "Un enlace sin texto y un botón redondo sin nombre están junto al logo."
+      },
+      "breaks": ["wcag-2.4.4", "wcag-4.1.2"],
+      "axeRules": ["link-name", "button-name"],
+      "fix": {
+        "en": "Every link and button has a name. Nothing is there only to look busy.",
+        "es": "Cada enlace y botón tiene nombre. No hay nada puesto solo para llenar."
+      }
+    },
+    {
+      "id": "tiny-targets",
+      "severity": "minor",
+      "title": { "en": "Click targets are tiny", "es": "Los objetivos de clic son diminutos" },
+      "where": {
+        "en": "Header icons are 16 px, the close mark is 14 px and the help and sign in links are 11 px text.",
+        "es": "Los iconos de la cabecera miden 16 px, la marca de cierre 14 px y los enlaces de ayuda e inicio de sesión tienen texto de 11 px."
+      },
+      "breaks": ["wcag-2.5.8"],
+      "axeRules": [],
+      "fix": {
+        "en": "Every control is at least 44 px tall and wide.",
+        "es": "Cada control mide al menos 44 px de alto y de ancho."
+      }
+    },
+    {
+      "id": "terms-dialog",
+      "severity": "blocker",
+      "title": {
+        "en": "The terms dialog traps the keyboard",
+        "es": "El diálogo de términos atrapa el teclado"
+      },
+      "where": {
+        "en": "A span opens it, Tab is blocked inside, Escape does nothing and it has no dialog role.",
+        "es": "Un span lo abre, Tab queda bloqueado dentro, Escape no hace nada y no tiene función de diálogo."
+      },
+      "breaks": ["wcag-2.1.1", "wcag-2.1.2", "wcag-4.1.2"],
+      "axeRules": [],
+      "fix": {
+        "en": "The terms are a plain disclosure on the page. There is no modal to get stuck in.",
+        "es": "Los términos son un desplegable simple en la página. No hay modal donde quedarse atrapado."
+      }
+    },
+    {
+      "id": "implied-consent",
+      "severity": "major",
+      "title": {
+        "en": "Closing the terms ticks the box",
+        "es": "Cerrar los términos marca la casilla"
+      },
+      "where": {
+        "en": "Closing the dialog by any route sets the accept checkbox, even if the person never agreed.",
+        "es": "Cerrar el diálogo por cualquier vía marca la casilla de aceptar, aunque la persona nunca haya aceptado."
+      },
+      "breaks": ["ux-control"],
+      "axeRules": [],
+      "fix": {
+        "en": "Nothing is ticked for you. Consent is stated in plain text next to the button that creates the account.",
+        "es": "Nada se marca por ti. El consentimiento se dice en texto claro junto al botón que crea la cuenta."
+      }
+    },
+    {
+      "id": "forced-newsletter",
+      "severity": "major",
+      "title": {
+        "en": "The newsletter box is required",
+        "es": "La casilla del boletín es obligatoria"
+      },
+      "where": {
+        "en": "You cannot continue unless you agree to weekly news and offers.",
+        "es": "No puedes continuar si no aceptas recibir noticias y ofertas cada semana."
+      },
+      "breaks": ["ux-control"],
+      "axeRules": [],
+      "fix": {
+        "en": "There is no marketing opt-in in the flow.",
+        "es": "No hay ninguna aceptación de marketing en el flujo."
+      }
+    },
+    {
+      "id": "too-many-fields",
+      "severity": "major",
+      "title": {
+        "en": "Eleven fields to give four facts",
+        "es": "Once campos para dar cuatro datos"
+      },
+      "where": {
+        "en": "Phone, birthdate, company, job title, street address, country and how you heard about it are all required.",
+        "es": "Teléfono, fecha de nacimiento, empresa, cargo, dirección, país y cómo te enteraste son obligatorios."
+      },
+      "breaks": ["ux-minimal"],
+      "axeRules": [],
+      "fix": {
+        "en": "Three fields and one plan choice. The account only needs a name, an email and a password.",
+        "es": "Tres campos y la elección de un plan. La cuenta solo necesita un nombre, un correo y una contraseña."
+      }
+    },
+    {
+      "id": "email-twice",
+      "severity": "minor",
+      "title": {
+        "en": "The email is asked twice and has no input type",
+        "es": "El correo se pide dos veces y no tiene tipo de input"
+      },
+      "where": {
+        "en": "A repeat email field is needed, and neither field is an email input nor offers autofill.",
+        "es": "Se exige un campo de correo repetido, y ninguno es un input de correo ni ofrece autocompletado."
+      },
+      "breaks": ["wcag-1.3.5", "ux-prevention"],
+      "axeRules": [],
+      "fix": {
+        "en": "One email input with the right type and autofill hint. The browser keyboard and autofill do the checking.",
+        "es": "Un solo input de correo con el tipo y la pista de autocompletado correctos. El teclado del navegador y el autocompletado hacen la comprobación."
+      }
+    },
+    {
+      "id": "password-rule-late",
+      "severity": "major",
+      "title": {
+        "en": "The password rule shows up only after you fail it",
+        "es": "La regla de la contraseña aparece solo después de fallar"
+      },
+      "where": {
+        "en": "It asks for 12 characters with a capital, a digit and a symbol, and says so only in an error.",
+        "es": "Pide 12 caracteres con mayúscula, número y símbolo, y lo dice solo en un error."
+      },
+      "breaks": ["wcag-3.3.2", "ux-prevention"],
+      "axeRules": [],
+      "fix": {
+        "en": "The rule is written above the field before typing. It asks for length only, and the password can be shown to check it.",
+        "es": "La regla está escrita sobre el campo antes de escribir. Solo pide longitud, y la contraseña se puede mostrar para revisarla."
+      }
+    },
+    {
+      "id": "payment-for-free",
+      "severity": "major",
+      "title": {
+        "en": "A card is needed even for the free plan",
+        "es": "Se pide tarjeta incluso para el plan gratis"
+      },
+      "where": {
+        "en": "Step 3 asks for card number, expiry and security code whatever plan was chosen.",
+        "es": "El paso 3 pide número de tarjeta, caducidad y código de seguridad sea cual sea el plan elegido."
+      },
+      "breaks": ["ux-match"],
+      "axeRules": [],
+      "fix": {
+        "en": "No payment step. The task only needs the four facts.",
+        "es": "No hay paso de pago. La tarea solo necesita los cuatro datos."
+      }
+    },
+    {
+      "id": "inbox-step",
+      "severity": "minor",
+      "title": {
+        "en": "A check your inbox screen that checks nothing",
+        "es": "Una pantalla de revisa tu correo que no revisa nada"
+      },
+      "where": {
+        "en": "It says a link was sent, then a Submit button moves on whether or not anything was confirmed.",
+        "es": "Dice que se envió un enlace y luego un botón Submit avanza se haya confirmado algo o no."
+      },
+      "breaks": ["ux-minimal", "ux-status"],
+      "axeRules": [],
+      "fix": {
+        "en": "Removed. The flow ends on a confirmation that names the person and the plan.",
+        "es": "Eliminada. El flujo termina en una confirmación que nombra a la persona y al plan."
+      }
+    },
+    {
+      "id": "step-bar",
+      "severity": "major",
+      "title": {
+        "en": "The step bar counts three steps for five screens",
+        "es": "La barra de pasos cuenta tres pasos para cinco pantallas"
+      },
+      "where": {
+        "en": "Three grey dots with numbers and no text. The current step is only a slightly different shade.",
+        "es": "Tres puntos grises con números y sin texto. El paso actual es solo un tono apenas distinto."
+      },
+      "breaks": ["wcag-1.3.1", "wcag-1.4.1", "ux-status"],
+      "axeRules": [],
+      "fix": {
+        "en": "Plain text says Step 2 of 3, and the list of steps marks the current one for assistive technology.",
+        "es": "Un texto simple dice Paso 2 de 3, y la lista de pasos marca el actual para la tecnología de apoyo."
+      }
+    },
+    {
+      "id": "no-structure",
+      "severity": "major",
+      "title": { "en": "No headings and no landmarks", "es": "Sin encabezados ni regiones" },
+      "where": {
+        "en": "Titles are bold divs and the page has no main region, so you cannot jump around.",
+        "es": "Los títulos son divs en negrita y la página no tiene región principal, así que no se puede saltar entre secciones."
+      },
+      "breaks": ["wcag-1.3.1", "wcag-2.4.6"],
+      "axeRules": [],
+      "fix": {
+        "en": "One h1 per screen, header, main and footer regions, and a skip link as the first stop.",
+        "es": "Un h1 por pantalla, regiones de cabecera, principal y pie, y un enlace para saltar como primera parada."
+      }
+    },
+    {
+      "id": "vague-actions",
+      "severity": "minor",
+      "title": {
+        "en": "Button names do not say what happens",
+        "es": "Los nombres de los botones no dicen qué pasa"
+      },
+      "where": {
+        "en": "Next, Continue, Proceed and Submit are used for four different things, and the plan step is titled Pick one.",
+        "es": "Next, Continue, Proceed y Submit se usan para cuatro cosas distintas, y el paso del plan se titula Pick one."
+      },
+      "breaks": ["wcag-2.4.6", "ux-recognition"],
+      "axeRules": [],
+      "fix": {
+        "en": "Each button says its outcome: Continue to plan, Create account.",
+        "es": "Cada botón dice su resultado: Continuar al plan, Crear cuenta."
+      }
+    },
+    {
+      "id": "focus-not-moved",
+      "severity": "major",
+      "title": {
+        "en": "Focus stays behind when the step changes",
+        "es": "El foco se queda atrás al cambiar de paso"
+      },
+      "where": {
+        "en": "After pressing a button the old screen is hidden and the keyboard is lost.",
+        "es": "Al pulsar un botón la pantalla anterior se oculta y el teclado se pierde."
+      },
+      "breaks": ["wcag-2.4.3"],
+      "axeRules": [],
+      "fix": {
+        "en": "On each step change the focus goes to the new heading and the page title changes.",
+        "es": "En cada cambio de paso el foco va al nuevo encabezado y cambia el título de la página."
+      }
+    }
+  ]
+}

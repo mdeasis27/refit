@@ -1,0 +1,11 @@
+node_modules/
+.next/
+.claude/
+.env*
+.vercel/
+coverage/
+test-results/
+playwright-report/
+public/broken/
+*.tsbuildinfo
+next-env.d.ts

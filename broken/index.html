@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top">
+  <span class="logo">Brightdesk</span>
+  <a href="#" class="ico-link"></a>
+  <button class="bell"></button>
+  <a href="#" class="tiny">Help</a>
+  <a href="#" class="tiny">Sign in</a>
+</div>
+
+<div class="hero">
+  <div class="slides" id="slides">
+    <div class="slide on"><img src="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2748%27 height=%2748%27%3E%3Ccircle cx=%2724%27 cy=%2724%27 r=%2722%27 fill=%27%236a8%27/%3E%3C/svg%3E" width="48" height="48"> "Brightdesk cut our reporting time in half." Ana, Studio Norte</div>
+    <div class="slide"><img src="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2748%27 height=%2748%27%3E%3Ccircle cx=%2724%27 cy=%2724%27 r=%2722%27 fill=%27%2386a%27/%3E%3C/svg%3E" width="48" height="48"> "The team onboarded in an afternoon." Luis, Kappa Labs</div>
+    <div class="slide"><img src="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2748%27 height=%2748%27%3E%3Ccircle cx=%2724%27 cy=%2724%27 r=%2722%27 fill=%27%23a86%27/%3E%3C/svg%3E" width="48" height="48"> "Simple, quick and reliable." Marta, Olivo</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="stepbar"><span class="st on" id="b1">1</span><span class="st" id="b2">2</span><span class="st" id="b3">3</span></div>
+
+  <div class="step" id="s1">
+    <div class="big">Tell us about you</div>
+    <div class="note">All fields are required.</div>
+    <input type="text" id="name" placeholder="Full name">
+    <input type="text" id="email" placeholder="Email">
+    <input type="text" id="email2" placeholder="Repeat email">
+    <input type="password" id="pw" placeholder="Password">
+    <div id="pwrule" class="rule"></div>
+    <input type="text" id="phone" placeholder="Phone number">
+    <input type="text" id="dob" placeholder="Birthdate (DD/MM/YYYY)">
+    <input type="text" id="company" placeholder="Company">
+    <input type="text" id="role" placeholder="Job title">
+    <input type="text" id="address" placeholder="Street address">
+    <input type="text" id="country" placeholder="Country">
+    <select id="heard">
+      <option value="">How did you hear about us?</option>
+      <option>Search</option>
+      <option>Friend</option>
+      <option>Social media</option>
+      <option>Other</option>
+    </select>
+    <div class="chk"><input type="checkbox" id="news"> <span>Yes, send me news and offers every week</span></div>
+    <div class="chk"><input type="checkbox" id="terms"> <span>I accept the <span class="lnk" id="openterms">terms</span></span></div>
+    <div class="btn" id="go1">Next</div>
+  </div>
+
+  <div class="step" id="s2" hidden>
+    <div class="big">Pick one</div>
+    <div class="plans">
+      <div class="plan" data-plan="Free">
+        <div class="pname">Free</div><div class="pdesc">For trying things out</div>
+        <div class="price">0 EUR / month</div>
+      </div>
+      <div class="plan" data-plan="Pro">
+        <div class="pname">Pro</div><div class="pdesc">For small teams</div>
+        <div class="price">19 EUR / month</div>
+      </div>
+      <div class="plan" data-plan="Team">
+        <div class="pname">Team</div><div class="pdesc">For larger groups</div>
+        <div class="price">49 EUR / month</div>
+      </div>
+    </div>
+    <div class="btn" id="go2">Continue</div>
+  </div>
+
+  <div class="step" id="s3" hidden>
+    <div class="big">Payment</div>
+    <div class="note" id="sum"></div>
+    <input type="text" id="card" placeholder="Card number">
+    <input type="text" id="exp" placeholder="MM/YY">
+    <input type="text" id="cvc" placeholder="CVC">
+    <div class="btn" id="go3">Proceed</div>
+  </div>
+
+  <div class="step" id="s4" hidden>
+    <div class="big">Check your inbox</div>
+    <div class="note" id="sent"></div>
+    <div class="note">Open the message and confirm your address, then come back here.</div>
+    <div class="btn" id="go4">Submit</div>
+  </div>
+
+  <div class="step" id="s5" hidden>
+    <div class="big">You are in</div>
+    <div class="note" id="done"></div>
+  </div>
+</div>
+
+<div class="overlay" id="terms-modal" hidden>
+  <div class="modal" id="modal">
+    <span class="x" id="closeterms">x</span>
+    <div class="big">Terms of service</div>
+    <p>By using Brightdesk you agree to use the service lawfully, to keep your credentials private and to pay the fees of the plan you select. We may update these terms from time to time.</p>
+    <div class="btn" id="okterms">I agree</div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
